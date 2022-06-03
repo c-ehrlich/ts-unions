@@ -35,7 +35,7 @@ interface BaseShapeProps {
 export type DrawerProps = BaseShapeProps &
   (CircleProps | SquareProps | RectangleProps);
 
-export function Drawer(props: DrawerProps) {
+export default function Drawer(props: DrawerProps) {
   return <pre>{JSON.stringify(props)}</pre>;
 }
 

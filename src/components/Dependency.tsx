@@ -5,7 +5,7 @@ type PanelProps =
   // | { collapsible: true; defaultCollapsed?: true }
   | { collapsible?: never; defaultCollapsed?: never };
 
-export function Panel(props: PanelProps) {
+export default function Panel(props: PanelProps) {
   return <pre>{JSON.stringify(props)}</pre>;
 }
 

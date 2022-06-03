@@ -31,7 +31,7 @@ type DropdownObjectProps<T> = {
 };
 type DropdownProps<T> = DropdownStringProps | DropdownObjectProps<T>;
 
-export function Dropdown<T>(props: DropdownProps<T>) {
+export default function Dropdown<T>(props: DropdownProps<T>) {
   return <pre>{JSON.stringify(props)}</pre>;
 }
 
